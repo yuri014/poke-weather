@@ -1,4 +1,27 @@
+# POKÉWEATHER :sunny:
+
+<p align="center">
+  <img src="https://img.shields.io/badge/-TypeScript-1C1C1C?style=flat&logo=Typescript&logoColor=blue">
+  <img src="https://img.shields.io/badge/-React-1C1C1C?style=flat&logo=React&logoColor=blue">
+  <a href="https://www.linkedin.com/in/yuri-flores-53b2b41a4" >
+   <img src="https://img.shields.io/badge/-YuriFlores-blue?style=flat&logo=Linkedin&logoColor=white">
+  </a>
+</p>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Screenshots :snowflake:
+
+<p align="center">
+  <img src=".src/landing.PNG" height="150" >
+  <img src=".src/pc_image.PNG" height="150" >
+  <img src=".src/mobile_image.PNG" height="150" >
+  <img src=".src/cold-image.PNG" height="150" >
+</p>
+
+## How it works :cloud:
+
+The application will display a Pokémon image according to the weather of the reseached city or the time of you device.
 
 ## Available Scripts
 

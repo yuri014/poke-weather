@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(29, 25, 66);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(29, 25, 66);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgb(29, 25, 66);
+}
+
+.weather {
+  background-image: url("https://images.pexels.com/photos/615348/forest-fog-sunny-nature-615348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.8s ease-out;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(50, 50, 70, 0.5);
+}
+
+.weather.warm {
+  background-image: url("https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+
+.weather.cold {
+  background-image: url("https://images.pexels.com/photos/300857/pexels-photo-300857.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  color: rgb(15, 15, 15);
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);
+}
+
+.weather.rain {
+  background-image: url("https://images.pexels.com/photos/1824270/pexels-photo-1824270.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+
+.weather.thunderstorm {
+  background-image: url("https://images.pexels.com/photos/1118869/pexels-photo-1118869.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+
+.weather.night {
+  background-image: url("https://images.pexels.com/photos/1853542/pexels-photo-1853542.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.75)
+  );
+  padding: 25px;
+}
+
+.search-block {
+  width: 100%;
+  margin: 0 0 75px;
+}
+
+.search-block .search-content {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+
+  color: #313131;
+  font-size: 20px;
+
+  transition: 0.4s ease;
+}
+
+.search-block .search-content:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.poke-card {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.poke-card img {
+  margin-top: 25%;
+  width: 300px;
+  height: 300px;
+  position: fixed;
+}
+
+.location-block .location-content {
+  position: relative;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.location-block .date {
+  position: relative;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
+
+.weather-block {
+  text-align: center;
+}
+
+.weather-block .temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 15px 25px;
+
+  font-size: 60px;
+  font-weight: 900;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(50, 50, 70, 0.5);
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.weather-block .weather-content {
+  position: relative;
+  font-size: 40px;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
+}
+
+@media (min-width: 1100px) {
+  .poke-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
