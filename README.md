@@ -15,8 +15,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <p align="center">
   <img src="./src/images/landing.PNG" height="150" >
   <img src="./src/images/pc_image.PNG" height="150" >
-  <img src="./src/images/mobile_image.PNG" height="150" >
-  <img src="./src/images/cold-image.PNG" height="150" >
+  <img src="./src/images/mobile_mage.PNG" height="150" >
+  <img src="./src/images/cold_image.PNG" height="150" >
 </p>
 
 ## How it works :cloud:
